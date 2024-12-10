@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Serif Thai';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #161624;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(183, 159, 159, 0.1);
+}
+
+.container h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #e7dede;
+    margin-bottom: 20px;
+}
+
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container form input[type="text"],
+.container form input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container form input[type="submit"],.container form input[type="reset"],.container form input[type="date"]{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container form input[type="submit"]:hover,.container form input[type="reset"]:hover,.container form input[type="date"]:hover{
+    background: #222;
+}
+
+.container form p{
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        font-size: 16px;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: #333;
+    }
+
+    .container{
+        background: #161624;
+        color: #fff;
+    }
+    .container:hover{
+        background: #75757e;
+        animation: 1px;
+        transition: all 0.5s;;
+        color: #fff;
+    }
+
+    .container form input[type="text"],
+    .container form input[type="password"]{
+        background: #333;
+        color: #fff;
+    }
+
+    .container form input[type="submit"],
+    .container form input[type="reset"]{
+        background: #fff;
+        color: #333;
+    }
+
+    .container form p{
+        color: #fff;
+    }
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.container{
+    animation: fade-in 1s;
+}
+
+.container form input[type="text"]:active,.container textarea:active{
+    border: 5px solid #232121;
+}
+
+
+

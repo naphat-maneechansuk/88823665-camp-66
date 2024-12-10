@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-</head>
-<body>
-    <h1>Workshop # HTML - FORM</h1>
-    <form>
-    <table>
-        <tr>
-            <td>ชื่อ</td>
-            <td><input type="text" name="fname" id="fname"></td>
-        </tr>
-        <tr>
-            <td>สกุล</td>
-            <td><input type="text" name="lname" id="lname"></td>
-        </tr>
-        <tr>
-            <td>วัน/เดือน/ปีเกิด</td>
-            <td><input type="date" name="bday" id="bday"></td>
-        </tr>
-        <tr>
-            <td>อายุ</td>
-            <td><input type="text" name="lname" id="lname"></td>
-        </tr>
-        <tr>
-            <td>เพศ</td>
-            <td>
-                <input type="radio" name="1">ชาย
-                <input type="radio" name="1">หญิง
-            </td>
-        </tr>
-        <tr>
-            <td>รูป</td>
-            <td><input type="file" name="pic" id="pic"></td>
-        </tr>
-        <tr>
-            <td>ที่อยู่</td>
-            <td>
-                <textarea name="address" id="address" cols="20" rows="5"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>สีที่ชอบ</td>
-            <td>
-                <select name="color" id="select" size="1">
-                    <option value="red">แดง</option>
-                    <option value="green">เขียว</option>
-                    <option value="blue">น้ำเงิน</option>
-                    <option value="yellow">เหลือง</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>เเนวเพลงที่ชอบ</td>
-            <td>
-               <input type="radio" name="2">
-                <label for="pop">เพื่อชีวิต</label>
-                <input type="radio" name="2">
-                <label for="rock">ลูกทุ่ง</label>
-                <input type="radio" name="2">
-                <label for="hiphop">อื่นๆ</label>
-            </td>
-        </tr>
-        <tr>
-            <td><input type="checkbox">ยินยอมให้เก็บข้อมูล</td>
-        </tr>
-        <tr>
-            <td>
-                <input type="reset">
-            </td>
-            <td>
-                <input type="submit">
-            </td>
-        </tr>
-    </table>
-    </form>
-</body>
-<body>
-   
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@100..900&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>css</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h1>Workshop # HTML - FORM</h1>
+            <form id="home">
+              <table>
+                <tr class="firstname">
+                  <td>ชื่อ</td>
+                  <td><input type="text" name="fname" class="name" /></td>
+                </tr>
+                <tr class="lastname">
+                  <td>สกุล</td>
+                  <td><input type="text" name="lname" class="name" /></td>
+                </tr>
+                <tr class="date">
+                  <td>วัน/เดือน/ปีเกิด</td>
+                  <td><input type="date" name="bday" id="bday" /></td>
+                </tr>
+                <tr class="age">
+                  <td>อายุ</td>
+                  <td><input type="text" name="lname" class="name" /></td>
+                </tr>
+                <tr class="gender">
+                  <td>เพศ</td>
+                  <td>
+                    <input type="radio" name="sex" />ชาย
+                    <input type="radio" name="sex" />หญิง
+                  </td>
+                </tr>
+                <tr class="image">
+                  <td>รูป</td>
+                  <td><input type="file" name="pic" id="pic" /></td>
+                </tr>
+                <tr class="address">
+                  <td>ที่อยู่</td>
+                  <td>
+                    <textarea
+                      name="address"
+                      id="address"
+                      cols="20"
+                      rows="5"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr class="like">
+                  <td>สีที่ชอบ</td>
+                  <td>
+                    <select name="color" id="select" size="1">
+                      <option value="red">แดง</option>
+                      <option value="green">เขียว</option>
+                      <option value="blue">น้ำเงิน</option>
+                      <option value="yellow">เหลือง</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="music">
+                  <td>เเนวเพลงที่ชอบ</td>
+                  <td>
+                    <input type="radio" name="music" />
+                    <label for="pop">เพื่อชีวิต</label>
+                    <input type="radio" name="music" />
+                    <label for="rock">ลูกทุ่ง</label>
+                    <input type="radio" name="music" />
+                    <label for="hiphop">อื่นๆ</label>
+                  </td>
+                </tr>
+                <tr class="accept">
+                  <td><input type="checkbox" />ยินยอมให้เก็บข้อมูล</td>
+                </tr>
+                <div class="buttons">
+                  <td>
+                    <input type="reset" class="reset" />
+                  </td>
+                  <td class="submit">
+                    <input type="submit" />
+                  </td>
+                </div>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
