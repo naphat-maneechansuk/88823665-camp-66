@@ -53,9 +53,7 @@
     </div>
 </div>
 @endsection
-
 @section('scripts')
-
 <script>
    function clickme(event) {
         event.preventDefault();
