@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="{{ url('public/css/adminlte.css') }}" />
     <!--end::Required Plugin(AdminLTE)-->
     @yield('styles')
+
   </head>
   <!--end::Head-->
   <!--begin::Body-->
@@ -73,6 +74,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
